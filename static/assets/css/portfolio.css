@@ -1,0 +1,78 @@
+/*!
+ * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+@media (min-width:768px) {
+    section {
+    padding: 50px 0;
+}
+/*@media (min-width:768px) {
+    section {
+    padding: 20px 0;
+}
+*/
+}.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+#portfolio .portfolio-item {
+    
+    right: 0;
+display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color:#1F618D ;
+    text-align: center;
+    padding: 25px;
+    color: white
+}
+ #portfolio .portfolio-item a img:hover {
+   opacity: 0.6;
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+    text-transform: none;
+    margin: 0;
+    color: white;
+}
+#portfolio .portfolio-item .portfolio-caption p {
+    font-size: 2px;
+    margin: 0;
+    color: white
+}
+ a img{      /*Images in the Our work Section*/
+ width: 100%;
+ height:250px;
+ }
+
+
+@media (max-width: 768px)
+{
+    #portfolio{
+        padding-top: 50px; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    a img{      /*Images in the Our work Section*/
+ width: 100%;
+ height:150px;
+ }
+#portfolio .portfolio-item .portfolio-caption{
+    margin-bottom: 50px;
+}
+#portfolio .portfolio-item .portfolio-caption h4{
+    font-size: 15px;
+}
+
+#portfolio .portfolio-item .portfolio-caption{
+    padding: 15px;
+}
+}
+

@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    /*background-image: url('http://ayebee.me/wp-content/uploads/2013/07/online-food.jpg');
+    background-size: 2000px 800px;
+        background-repeat: no-repeat;
+        opacity: 0.96; */
+    }
+ .navbarr ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #17202A;
+    top=0;
+    height: 100px;
+    position: static;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+     z-index: 10;
+text-align: right;
+
+    
+    }   
+ .navbarr li{
+    display: inline-block;
+   /* float:right;*/         
+    text-align: center;
+    margin-top: 27px;
+    margin-right:25px; 
+
+ }
+ .navbarr li a{
+    /*display: block;*/
+    /*width: 100px;*/
+    /*background-color: #dddddd;*/
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px
+    margin: 0px;
+    
+    }
+ .navbarr li a:hover{
+    background-color: #505050    ;
+    color:white;
+ }
+
+ /*.active{
+    background-color:#424949;
+    color:white;
+    width: 80%;
+ }*/
+ .logo{
+ 	
+ 	font-family: 'Montserrat', sans-serif;
+ 	font-size: 30px;
+ 	position: absolute;
+ 	/*z-index: 3; */
+ 	color: white;
+ 	margin-top:30px;
+ 	float: left;
+ /*	margin-left:3%;*/ 
+ 	-webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+    margin-left: 20px;
+ }
+
+ .logo_image{
+    display: inline-block;
+    position:absolute;
+    z-index: 3;
+    margin-left: 170px;
+        justify-content: center;
+        align-items: center;
+    margin-top: 5px;
+ }
+ .logo_image img{
+    height: 90px;
+  
+
+ }
+
+@media (max-width: 767px) {
+.navbarr {
+        background-color: #17202A;
+        height:60px;
+        padding-top: 65px;
+}     
+.navbarr ul {
+    display: none;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbarr li a{
+    width: 80%;
+}
+.navbarr ul li{
+    margin-top: 10px;
+    /*width: 80%;*/
+    float: none;
+    width: 100%;
+    margin-right:0px; 
+}
+.navbarr li a:hover{
+    background-color: #424949  ;
+    color:white;
+    width: 80%;
+ }
+
+
+.logo{
+    font-size:20px;
+    margin-top:20px; 
+    margin-left: 20px;
+    position: absolute;
+}
+.logo_image img{
+    height:50px;
+    position: absolute;
+}
+.logo_image{
+
+    margin-left: 110px;
+        position:absolute;
+        margin-top:8px; 
+}
+
+
+}
+.active{
+  background-color: #424949  ;
+    }
+ 
+ ul{
+    margin-bottom: 0;
+    }
+.Menu-icon{
+  position: absolute;
+  z-index: 10;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  top: 15px;
+  right: 10%;
+  cursor: pointer;
+  font-size: 20px;
+  /*background: grey;*/
+  border-radius: 3px;
+}
+.Menu-icon-active{
+background: grey;
+}
+.about-grid p{
+  font-size: 15px;
+}
+@media(min-width: 800px){                      /*Hiding the mobile menu icon in case of a bigger screen*/
+  .Menu-icon{
+    display: none;
+  }
+}

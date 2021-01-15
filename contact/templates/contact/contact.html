@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<title>Contact | DJSCOE-ACM</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="djacm , djscoe acm, acm, dj acm, djscoe student chapter ">
+<meta name="description" content="DJSCOE-ACM has established itself as a successful committee in terms of the number of members who have become a part of the ACM family and in terms of the seminars/workshops that have been conducted.">
+<meta name="author" content="DJSCOE-ACM">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="{% static 'images/acm-logo.ico' %}">
+<link rel="apple-touch-icon" href="{% static 'images/acm-logo.ico' %}">
+<!-- <link href="assets/css/bootstrap.min.css" rel='stylesheet' type='text/css' /> -->
+<link href="{% static 'assets/css/bootstrap.min.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'assets/css/navbar.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'assets/css/contact.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'assets/css/navbar.css' %}" rel='stylesheet' type='text/css' />
+ <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+ <link href="{% static 'assets/css/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+
+   <script src="{% static 'assets/jquery-3.1.0.min.js' %}"></script>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+<script src="{% static 'assets/js/navbar.js' %}"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-68989382-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<style type="text/css">
+
+.upper{
+background: url("{% static 'assets/images/contact-bg.jpg' %}");
+background-size:cover;
+background-repeat: no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+}
+body{
+background:#17202A;
+}
+.about-grid p{
+font-size: 15px;
+}
+@media(min-width: 800px){                      /*Hiding the mobile menu icon in case of a bigger screen*/
+.Menu-icon{
+display: none;
+}
+}
+body{
+background-color: #232730;;
+}
+
+</style>
+</head>
+<body>
+<!--start-containe-->
+<!--start-header-->
+<!--//End-header-->
+
+<!--start-contact-->
+<div class="upper">
+
+<div id="contact" class="contact">
+  <div class="container">
+     <h3>Contact<label> </label></h3>
+    <div class="contact-grids">
+      <div class="col-md-6 contact-grid-left">
+        {% if sent %}
+          <p>Thank You For Contacting Us, We will Get Back To You Shortly.</p>
+        {% else %}
+        <form method="POST" action="{% url 'contact' %}">
+          {% csrf_token %}
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="Email Id">
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Your Message here"></textarea>
+          <p class="conditions"> All Fields Are Compulsory</p>	<div class="clearfix"> </div>
+          <span class="submit-btn"><input type="reset" value="Reset"></span>
+          <span class="submit-btn"><input type="submit" value="Send"></span>
+        </form>
+        {% endif %}
+        <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
+            <p style="color:white">Select file to upload:</p>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload File" name="submit">
+        </form> -->
+      </div>
+
+      <div class="col-md-6 contact-grid-right">
+
+        <iframe style="box-shadow: 2px 2px 2px 1px rgba(128,128,128,0.1);" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.4994801090171!2d72.83743607483443!3d19.107747162267845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75f29a4205098f99!2sDwarkadas+J+Sanghvi+College+of+Engineering!5e0!3m2!1sen!2sus!4v1397913464271" frameborder="0" style="border:0"></iframe>
+
+        <p></p>
+        <div class="col-md-4">
+          <!--h5>Phone</h5>
+          <span>988</span-->
+        </div>
+        <div class="col-md-4" style="font-size:18px;">
+          <h5>Address</h5>
+          <span>D. J. Sanghvi College of Engineering,<br/></span>
+          <span>Vile Parle (W),</span>
+          <span>Mumbai.</span>
+        </div>
+        <div class="col-md-4" style="font-size:18px;">
+          <h5>Email</h5>
+          <span><a href="mailto:acmdjscoe@gmail.com">acmdjscoe@gmail.com</a></span>
+        </div>
+        <!-- <div class="clearfix"> </div> -->
+      </div>
+      <!-- <div class="clearfix"> </div> -->
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+</div>
+</div>
+
+</body>
+
+{% endblock %}

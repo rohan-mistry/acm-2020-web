@@ -1,0 +1,447 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Events | DJSCOE-ACM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="djacm , djscoe acm, acm, dj acm, djscoe student chapter ">
+    <meta name="description" content="DJSCOE-ACM has established itself as a successful committee in terms of the number of members who have become a part of the ACM family and in terms of the seminars/workshops that have been conducted.">
+    <meta name="author" content="DJSCOE-ACM">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="{% static 'images/acm-logo.ico' %}">
+    <link rel="apple-touch-icon" href="{% static 'images/acm-logo.ico' %}"> <script src="{% static 'assets/jquery-3.1.0.min.js' %}"></script>
+      <!-- Bootstrap Core CSS -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'assets/css/events.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'assets/css/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/navbar.css' %}" rel='stylesheet' type='text/css'>
+    <link href="{% static 'assets/css/footer.css' %}" rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'assets/js/navbar.js' %}"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68989382-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<style type="text/css">
+	.eventimage
+	{
+	 height: 275px;
+width: 350px;
+
+	}
+
+	.portfolio-link{
+height: 275px;
+width: 350px;
+
+	}
+
+.Menu-icon-active{
+background: grey;
+}
+.about-grid p{
+  font-size: 15px;
+}
+
+#portfolio{
+    margin-top: 150px;
+    position: relative;
+    z-index: 0;
+}
+
+@media(max-width: 800px){
+  #portfolio{
+    margin-top: 100px;
+  }
+.eventimage
+	{
+	 height: 225px;
+width: 300px;
+
+	}
+
+}
+body{
+    background:#E2E2E2;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+.
+portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+    <!-- Navigation -->
+    <!-- Header -->
+
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+
+
+                </div>
+            </div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>Lines Of Code Hackathon</label>
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/loc.jpg' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>Garbage Locator</label>
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/garbageLocator.jpg' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>Internship Fair</label>
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/Internshipfair.jpg' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>Industrial Visit</label>
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/tcs1.png' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>AMBI</label>
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/ambi.jpg' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>TechTalks</label>
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/techtalks.png' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>Blender Workshop</label>
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/blender.jpg' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <label>Django Workshop</label>
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/django.png' %}" class="eventimage" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+
+    <!-- Contact Section -->
+
+
+    <!-- Footer -->
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Internship Fair</h2>
+
+                            <img src="{% static 'assets/images/Internshipfair.jpg' %}" class="eventimage img-centered" alt="">
+                            <p>For the first time in the history of the college, D. J. Sanghvi organised its biggest event of the year, the Internship Fair on the 4th of April,2016. Internships widen a student's perspective as it gives the student a platform to go beyond books and apply their knowledge practically.  This opportunity was open to all third year students of the college.</p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Industrial Visit</h2>
+
+                            <img src="{% static 'assets/images/tcs1.png' %}" class="eventimage img-centered" alt="">
+                            <p>DJ ACM believes in the principle that experience is the teacher of all things. With this view in mind, ACM organized its annual Industrial Visit to Tata Consultancy Services, Pune on Monday 29th February 2016. The visit was aimed at giving students much needed practical exposure into relevant applications in the field of computer science and providing them an insight to the everyday happenings of a software giant.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>AMBI</h2>
+                            <img src="{% static 'assets/images/ambi.jpg' %}" class="eventimage img-centered" alt="">
+                            <p>After conducting resoundingly successful events like Tech Talks, the Django and Blender workshops, ACM returned with AMBI, an event that served to inform the students about the varied fields that lie before them, and how to go about choosing their final year project topics.</p>
+`                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Tech Talks</h2>
+
+                            <img src="{% static 'assets/images/techtalks.png' %}" class="eventimage img-centered" alt="">
+                            <p>We at ACM believe that experience,good or bad is the teacher of all things.  Our flagship event, Tech Talks, conducted on the 9th of February, espoused this very principle to its core. Tech Talks provided an opportunity to interact with stalwarts, in fields as varied as computer science , entrepreneurship and finance.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Blender Workshop</h2>
+
+                            <img src="{% static 'assets/images/blender.jpg' %}" class="eventimage img-centered" alt="">
+                            <p>After the resounding success of the Django Workshop, DJ-ACM organised the highly anticipated Blender Workshop on the 23rd and 24th of January,2016. Blender is an open source computer graphics software used for animation, 3D modelling simulation, and video editing.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Django Workshop</h2>
+                            <img src="{% static 'assets/images/django.png' %}" class="eventimage img-centered" alt="">
+                            <p> 2016 started off on a high note with an informative and riveting workshop on the Django framework based on Python organised by the ACM student chapter of the college. The basics of Python, HTML, CSS, Django and the operation of Github were taught to the enraptured audience with the help of the ACM co-committee diligently debugging as well as helping participants.</p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	 <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Garbage Locator App</h2>
+                            <img src="{% static 'assets/images/garbageLocator.jpg' %}" class="eventimage img-centered" alt="">
+                            <p>Inspired by the 'Swachch Bharat Abhiyan' DJ-ACM developed an Android app to aid the BMC. With the aim to clean up Mumbai, this initiative relies on the citizens of Bombay to report problem areas through the app. With a success rate of 95% the Garbage Locator app ensures cleanliness through mutual cooperation between the government and its citizens. To know more <a href = "http://www.letsmakeindiaclean.org/" target = "_blank">Click Here</a>.</p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Lines Of Code Hackathon</h2>
+                            <img src="{% static 'assets/images/loc.jpg' %}" class="eventimage img-centered" alt="">
+                            <p>Lines Of Code(LOC) is a 24-Hour Hackathon by DJ ACM and will take place from 22nd to 23rd February, 2020.</p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!-- <script src="js/jqBootstrapValidation.js"></script> -->
+    <!-- <script src="js/contact_me.js"></script> -->
+
+    <!-- Theme JavaScript -->
+    <script src="{% static 'assets/js/freelancer.min.js' %}"></script>
+</body>
+
+
+
+
+{% endblock %}

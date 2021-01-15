@@ -1,0 +1,120 @@
+html
+{
+    overflow-x: hidden;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+.file-support
+{
+    margin-top: 0!important;
+}
+
+#apply-form
+{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.list-unstyled>li{
+    margin: 5px 0;
+}
+
+.list-unstyled>li:before{
+      content: '\2022';
+}
+
+.join-us-row
+{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.join-us
+{
+    margin-bottom: 1px #ccc solid;
+    font-size: 45px;
+    font-style: bold;
+    font-weight: 500;
+    
+}
+
+.slider-info
+{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    margin-left: 0
+    
+}
+
+.slider-info-row
+{
+    text-align: center;
+}
+
+
+.slider-title
+{
+    font-size: 50px;
+    font-style: bold;
+    color: white;
+    text-shadow: 3px 3px 0px #000;
+}
+
+@media(max-width: 768px){
+    .slider-title
+    {
+        font-size: 25px;
+    }
+}
+
+
+
+.sample-resume
+{
+    color: red;
+}
+
+
+.submit-btn-row,.no-lr-margin
+{
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+.no-lr-margin
+{
+    text-align: center;
+}
+
+
+.contact-grids
+{
+    margin: 0 0;
+}
+
+
+.about-heading
+{
+    text-align: center!important;
+}

@@ -1,0 +1,108 @@
+.wellcome-note-head{
+  color: #4F6367;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin: 0.2em 0;
+}
+.wellcome-note-head label{
+  display: block;
+  font-weight: normal;
+  margin: 0;
+}
+
+.wellcome-note-info{
+  
+  font-size: 1.175em;
+  width: 80%;
+  margin: 0 auto;
+  color:#4F6367;
+}
+/*What we do ?*/
+.about{
+  text-align:center;
+  
+}
+.about h2{
+  font-size: 2.2em;
+  font-weight: 900;
+  color: #4F6367;
+  text-align: left;
+  margin: 0.8em 0 0.8em;
+}
+.darkk .slid-btn{f
+border:2px solid black !important;
+color:black;
+}
+.darkk h1{
+color:black !important;
+}
+.darkk p{
+color:black !important;
+}
+.wellcome-note-head{
+  color: #4F6367;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin: 0.2em 0;
+}
+.wellcome-note-head label{
+  display: block;
+  font-weight: normal;
+  margin: 0;
+}
+.wellcome-note-head span{
+  font-weight:bold;
+  font-size: 30px;
+}
+.wellcome-note-info{
+  
+  font-size: 1.175em;
+  width: 80%;
+  margin: 0 auto;
+  color:#4F6367;
+}
+/*-----start-about-grids----*/
+.about-grids{
+  /*padding:3em 0;*/
+}
+.about-grid span{
+  width: 92px;
+  height: 79px;
+  display: inline-block;
+  background: url(../images/about-icons.png) no-repeat 17px 0px;
+  margin: 1em 0;
+}
+.about-grid h3{
+  margin:0;
+  padding:0.3em 0;
+}
+.about-grid h3 a{
+  color: #3c5b84;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-decoration: none;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 0 0 0.1em;
+  margin: 0 0 0.1em;
+  display: block;
+}
+.about-grid h3 a label{
+  font-weight: 100;
+  font-size: 0.875em;
+  color: #97AEB3;
+}
+.about-grid p{
+  color: #4F6367;
+  text-align: justify;
+  font-size: 0.875em;
+  line-height: 1.6em;
+}
+.about-grid span.about-icon1{
+  background-position: -276px 9px;
+}
+.about-grid span.about-icon2{
+  background-position: -577px 3px;
+}
+.about-grid span.about-icon3{
+  background-position: -879px 2px;
+}

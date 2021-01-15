@@ -1,0 +1,87 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+<link href="{% static 'assets/css/team.css' %}" rel='stylesheet' type='text/css'>
+<div class="container" >
+      <h1><b>Association for Computing Machinery</b></h1> <h1><b>Committee 2019-2020</b></h1>
+      <br>
+      <b>
+
+      {% for model in committee.all %}
+      {% if model.position == 1  %}
+           <div class="row">                                                                          <!-- first row -->
+            <div class="col-md-4 "></div> <!-- empty space to get the next element in the center-->
+            <div class="col-md-4 team-member" style="margin-top:10px">
+                <img src="{{ model.pic.url }}" class=" img-rounded" alt="No Image Yet">
+                <p>{{ model.name }}</p>
+                <p>{{ model.post }}</p>
+
+            </div>
+          <!-- <div class="col-md-4"></div> -->
+          </div>
+          <div class="row">
+          {% elif model.position <= 4 %}
+         <!-- empty space to get the next element in the center-->
+          <div class="col-md-4 team-member" style="margin-top:10px">
+              <img src="{{ model.pic.url }}" class=" img-rounded" alt="No Image Yet">
+              <p>{{ model.name }}</p>
+              <p>{{ model.post }}</p>
+
+          </div>
+
+          {% elif  model.position <= 8 %}
+        </div>
+          <div class="row">
+            <div class="col-md-4 "></div> <!-- empty space to get the next element in the center-->
+            <div class="col-md-4 team-member" style="margin-top:10px">
+                <img src="{{ model.pic.url }}" class=" img-rounded" alt="No Image Yet">
+                <p>{{ model.name }}</p>
+                <p>{{ model.post }}</p>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+          {% else %}
+            <div class="col-md-6 team-member" style="margin-top:10px">
+                <img src="{{ model.pic.url }}" class=" img-rounded" alt="No Image Yet">
+                <p>{{ model.name }}</p>
+                <p>{{ model.post }}</p>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        {% endif   %}
+
+
+        {% endfor %}
+      </div>
+    </div>
+      <!--<h4> ACM Convenor: Dr. Prof. Narendra Shekokar</h4>-->
+      <!--<h4>ACM Co-ordinator: Prof. Aruna Gawde </br></h4>  -->
+      <!--<h4>ACM Co-ordinator: Prof. Pankaj Sonawane</h4>-->
+      <!--<h2 style="margin-top:40px; font-size:35px;">Committee</h2>-->
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

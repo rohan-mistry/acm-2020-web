@@ -1,0 +1,446 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'loc/css/styles.css' %}"/>
+    <link rel="stylesheet" href="{% static 'loc/plugins/aos.css' %}"/>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    let devfolioOptions = {
+        buttonSelector: '#devfolio-apply-now',
+        key: 'djacm-loc',
+    }
+
+    let script = document.createElement('script');
+    script.src = "https://apply.devfolio.co";
+    document.head.append(script);
+
+    script.onload = function () {
+        new Devfolio(devfolioOptions);
+    }
+
+    script.onerror = function () {
+        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+        });
+    }
+});
+</script>
+    <title>LOC</title>
+</head>
+<body style="font-family: 'Nunito'"onload="typingEffect();">
+
+		<video autoplay muted loop id="myVideo">
+        <source src="{% static 'video.mp4' %}" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+    <div class="container-fluid" id="home" style="z-index: 1000;">
+        <!--
+            <div class="wrap" >
+            <img src="assets/images/logo.gif" class="mx-auto d-block" alt="tv" >
+            <div class="textLoc" id="makehappy"></div>
+        </div>
+         -->
+
+        <div class="headingContainer" style="align-items: center;">
+        <!-- <h1 class="heading font"><span class="initial">LINES OF </span><span id="blink">_</span></h1> -->
+			<h1 style="text-align: center;" ><span class="header-sub-title heading font" id="word">LOC 2.0</span><span class="header-sub-title blink">_</span></h1>
+			<br />
+			<h3 class="font date">22nd FEB - 23rd FEB, 2020</h3>
+		</div>
+		<div class="mainContent container" style="z-index: 1000;">
+			<div id="clockdiv" class="row">
+				<div class="col-xs-6">
+					<span class="days"></span>
+					<div class="smalltext">Days</div>
+				</div>
+				<div class="col-xs-6">
+					<span class="hours"></span>
+					<div class="smalltext">Hours</div>
+				</div>
+				<div class="col-xs-6">
+					<span class="minutes"></span>
+					<div class="smalltext">Minutes</div>
+				</div>
+				<div class="col-xs-6">
+					<span class="seconds"></span>
+					<div class="smalltext">Seconds</div>
+				</div>
+			</div>
+		</div>
+        <div class="row styleAbout">
+
+            <div class="col-xs-12 col-lg-12 col-md-12 text-center styleInfo" >
+                <div >
+                    <h1 class="font" style="font: size 50px;" data-aos="zoom-in"> ABOUT LOC</h1>
+                    <div class="counter-modern-decor "></div>
+                    <p data-aos="fade-right">
+
+                            One of the most awaited events of DJ-ACM,<strong>LoC(Lines of Code)</strong>  is around the corner. With over 200 participants from numerous colleges, the hackathon is a gathering where individual programmers collaborate their codes to make <strong>industry-grade projects</strong> .
+                    </p>
+
+                    <div class="text-center p-3" data-aos="zoom-in">
+                        <!--<button class="btn btn-lg btn-danger" style="background-color: #ff0920;">Register with Devfolio</button>-->
+                        <button class="btn btn-lg" style="background-color: #3770ff ; color:white" id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
+                    </div>
+                    <p data-aos="fade-right">
+                        Testing both, coding and coordination skills, LoC is split into 2 rounds. So, gear up and use this platform to showcase your excellence in various programming domains.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="serve " id="domain">
+            <div class=" text-center">
+                <h1 class="serveTop cmnHeader font ">DOMAINS</h1>
+            </div>
+            <div class="row serveContent">
+                <div class=" col-lg-3 col-xl-3 col-md-3 col-xs-12">
+                    <div class="serveCard">
+                        <div class="text-center serveIcon"><img src="{% static 'loc/assets/images/weather.png' %}" class="modifyServe"/></div>
+                        <h3 class="text-center serveHead">Weather and Climate</h3>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-xl-3 col-md-3 col-xs-12">
+                    <div class="serveCard">
+                        <div class="text-center serveIcon"><img src="{% static 'loc/assets/images/laworder.png' %}" class="modifyServe"/></div>
+                        <h3 class="text-center serveHead">Crime,News and Law and Order</h3>
+                    </div>
+                </div>
+
+                <div class=" col-lg-3 col-xl-3 col-md-3 col-xs-12">
+                    <div class="serveCard">
+                        <div class="text-center serveIcon"><img src="{% static 'loc/assets/images/education.png' %}" class="modifyServe"/></div>
+                        <h3 class="text-center serveHead">Education and Student Communities</h3>
+                    </div>
+                </div>
+
+                <div class=" col-lg-3 col-xl-3 col-md-3 col-xs-12">
+                    <div class="serveCard">
+                        <div class="text-center serveIcon"><img src="{% static 'loc/assets/images/sports.png' %}" class="modifyServe"/></div>
+                        <h3 class="text-center serveHead">Sports Analytics</h3>
+                    </div>
+                </div>
+
+
+            </div>
+		</div>
+
+		 <div class=" text-center">
+                <h1 class="serveTop cmnHeader font ">SPONSORS</h1>
+            </div>
+
+		<div class="row ">
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center "><a href="https://matic.network/"><img class="sponsor" style="border-radius: 10px; width: 100%, height: auto" src="{% static 'loc/assets/images/Matic-Network_Logo-Light.png' %}"></a></div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://devfolio.co/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/Devfolio - White.png' %}"></a></div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://fold.money"><img class="sponsor" style="border-radius: 10px"src="{% static 'loc/assets/images/Logo White.png' %}"></a></div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://www.wolfram.com/language/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/wolframlogo.PNG' %}"></a></div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://haptik.ai/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/haptik.PNG' %}"></a></div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://codingblocks.com/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/CodingBlocks.jpeg' %}"></a></div>
+                 <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://balsamiq.com/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/Balsamiq.png' %}"></a></div>
+
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://www.hellointern.com/"><img class="sponsor styleInfo"style="border-radius: 10px" src="{% static 'loc/assets/images/HelloIntern.png' %}"></a></div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://www.linode.com/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/Linode.png' %}"></a></div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://www.bugsee.com/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/bugsee3.png' %}"></a></div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center logosize"><a href="https://www.blockdegree.org/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/Blockdegree.PNG' %}"></a></div>
+
+
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://www.7thheaven.in/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/7heaven.PNG' %}"></a></div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://www.creative-tim.com/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/creative-tim-white-bg.jpg' %}"></a></div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://www.thesouledstore.com/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/SouledStore.png' %}"></a></div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 text-center"><a href="https://cloudsploit.com/"><img class="sponsor" style="border-radius: 10px" src="{% static 'loc/assets/images/CloudSploit.png' %}"></a></div>
+
+
+
+
+
+                  </div>
+			</div>
+		<div style="padding: bottom 50px;" id="prize">
+			<h2 class="font" style="font-size: 60px; padding: 40px;">PRIZES</h2>
+			<div class="container">
+				<div class="row text-center" style="justify-content: center;">
+					<div class="col-lg-4 col-md-6 col-xs-12 makeCenter" style="margin-bottom: 20px;">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="{% static 'loc/assets/images/medal.png' %}" alt="Avatar" style="height:250px;">
+							</div>
+							<div class="flip-card-back">
+								<h1 class="font" style="margin-top: 120px;">Winner</h1>
+								<p class="font">To be Revealed Soon</p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-xs-12 makeCenter" style="margin-bottom: 20px;">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="{% static 'loc/assets/images/second.png' %}" alt="Avatar" style="height:250px;">
+							</div>
+							<div class="flip-card-back">
+								<h1 class="font" style="margin-top: 120px;">Runner Up</h1>
+								<p class="font">To be Revealed Soon</p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-xs-12 makeCenter" style="margin-bottom: 20px;">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="{% static 'loc/assets/images/third.png' %}" alt="Avatar" style="height:250px;">
+							</div>
+							<div class="flip-card-back">
+								<h1 class="font" style="margin-top: 120px;">Second Runner Up</h1>
+								<p class="font">To be Revealed Soon</p>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+         <h2 class="font styleRule">Guidelines</h2>
+        <div class="text-center" style="padding: 30px;">
+
+            <div class="list-type5">
+                <ol>
+                <li><a >Teams can be from one to four members.</a></li>
+                <li><a >The reporting time is sharp 8:30am on the 22nd of February. </a></li>
+                <li><a >Lunch,Dinner and Breakfast will be provided.</a></li>
+                <li><a >All participants are requested to get their respective Identity Cards.</a></li>
+                <li><a >Teams will be shortlisted on the basis of their Devfolio profile.</a></li>
+                <li><a >All participants are requested to carry atleast one extension board per team. </a></li>
+                <li><a > All coders are requested to get their laptops. The solution must be developed during the event only.</a></li>
+                <li><a >Selected teams will receive a message from ACM by 18th of February and must respond to it within 2 days. Only those teams are requested to be present at the venue on the 22nd of February at 8:30 am. </a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="" id="schedule">
+            <h1 class="text-center font  makePad" style="color: white;font-size: 50px;">Schedule</h1>
+            <div class="timeline">
+                <div class="cover left" data-aos="zoom-in-right">
+                  <div class="content " >
+                    <h2>8th Feb</h2>
+                    <p>Registration Begins</p>
+                  </div>
+                </div>
+                <div class="cover right" data-aos="zoom-in-left">
+                  <div class="content">
+                    <h2>16th Feb</h2>
+                    <p>Registration Ends</p>
+                  </div>
+                </div>
+                <div class="cover left" data-aos="zoom-in-right">
+                  <div class="content" >
+                    <h2>18th Feb</h2>
+                    <p>Shortlisted Teams out</p>
+                  </div>
+                </div>
+                <!-- <div class="cover right" data-aos="zoom-in-left">
+                  <div class="content" >
+                    <h2>18th March</h2>
+                    <p> Problem Statements Released</p>
+                  </div>
+                </div> -->
+                <div class="cover right" data-aos="zoom-in-right">
+                  <div class="content" >
+                    <h2>22nd Feb</h2>
+                    <p>Hack Day</p>
+                  </div>
+                </div>
+                <div class="cover left" data-aos="zoom-in-left">
+                  <div class="content" >
+                    <h2>23rd Feb</h2>
+                    <p>Prize Distribution</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="font" style="font-size: 50px; padding-top: 40px;">FAQ</h2>
+            <div class="faqContainer">
+                <button class="collapsible">What is a Hackathon?</button>
+                <div class="contents">
+                    <p style="margin-top: 10px;">A hackathon is a design sprint-like event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, and others collaborate intensively on software projects
+
+                        The goal of a hackathon is to create usable software with the goal of creating a functioning product by the end of the event.</p>
+                </div>
+                <!--<button class="collapsible">What are the problem statements for the hackathon?</button>-->
+                <!--<div class="contents">-->
+                <!--    <p style="margin-top: 10px;">The problem statements will be declared soon. Once you’ve registered we’ll keep you posted with all details.</p>-->
+                <!--</div>-->
+                <button class="collapsible">How do we form a team?</button>
+                <div class="contents">
+                    <p style="margin-top: 10px;">Each team would comprise of 2-4 members including the team leader. All team members should be from same college; no inter-college teams are allowed. However, members from different branches of the same college/ institute can form a team.</p>
+                </div>
+
+                <button class="collapsible">What if this is my first hackathon?</button>
+                <div class="contents">
+                    <p style="margin-top: 10px;">LOC Hackathon is the best way to start as we provide you with mentors and talks from industry experts. Our aim is to provide a place to learn in a short amount of time, interact and learn from other like minded people.</p>
+                </div>
+
+                <button class="collapsible">What will be provided during the hackathon?</button>
+                <div class="contents">
+                    <p style="margin-top: 10px;">Food, water and refreshments, prizes, internship and placement opportunities, A/C rooms and bedding, desktop computers, LAN connection for each member.</p>
+                </div>
+                <button class="collapsible">What should I bring?</button>
+                <div class="contents">
+                    <p style="margin-top: 10px;">We recommend to get your own laptop with all the necessary softwares installed, chargers, student ID, change of clothes, pillow and blankets as per your convenience.</p>
+                </div>
+                <button class="collapsible">What should I not bring?</button>
+                <div class="contents">
+                    <p style="margin-top: 10px;">Weapons, drugs, alcohol of any kind are not permitted.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mapMarker row" style="padding:0;margin-top: 20px;">
+            <div class="col-md-6 branch"  >
+                <h3 class="text-center gradient-text">Co-Organizers</h3>
+                <div class=" text-center">
+                    <div class="branchHead">Ankit Gupta</div>
+                    <div class="branchInfo">
+                        Phone:
+                        <span class="branchNumber">+91-98334-82539</span>
+                    </div>
+                </div>
+                <div class=" text-center">
+                    <div class="branchHead">Heeket Mehta</div>
+                    <div class="branchInfo">
+                        Phone:
+                        <span class="branchNumber">+91-99674-92421</span>
+                    </div>
+                </div>
+                <div class=" text-center">
+                    <div class="branchHead"><a href="{% url 'team' %}" class="styleCom">Committee <span class="fa fa-angle-double-right"></span></a></div>
+
+                </div>
+            </div>
+            <div class="col-md-6 " id="mapId" style="height:368px;padding: 0;">
+				<iframe class="map" style="box-shadow: 2px 2px 2px 1px rgba(128,128,128,0.1);" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.4994801090171!2d72.83743607483443!3d19.107747162267845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75f29a4205098f99!2sDwarkadas+J+Sanghvi+College+of+Engineering!5e0!3m2!1sen!2sus!4v1397913464271" frameborder="0" style="border:0"></iframe>
+
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+			<footer id="footer" class="footer-distributed " style="padding-top: 80px;padding-bottom: 10px;">
+
+                <div class="row" style="color:white;line-height: 2;">
+
+                    <div class="col-md-3 col-xs-12 footerModify text-center">
+                        <div class="footerTitle">
+                            About us
+                        </div>
+                        <div class="footerLogo">
+                            <a class="" >
+                                <img class="styleFootLogo" src="{% static 'loc/assets/images/acm-logo.png' %}"/>
+                            </a>
+                        </div>
+
+                        <div>
+                            Don't let us convince you about our success. Let our three consecutive Best Student Chapter of the Year awards do the talking.
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-xs-12 footerModify text-center">
+                        <div class="footerTitle text-center">
+                            Navigation
+                        </div>
+                        <div class="row">
+                            <div class=" col-xs-6 col-md-6 col-lg-6 text-center">
+
+                                    <a href="#home" class="footerLink"><i class="fa fa-angle-right footerIcon"></i>Home</a>
+                                    <a href="#domain" class="footerLink"><i class="fa fa-angle-right footerIcon"></i>Problems</a>
+                                    <a href="#schedule" class="footerLink"><i class="fa fa-angle-right footerIcon"></i>Schedule</a>
+
+
+                            </div>
+                            <div class="col-md-6 col-xs-6 col-lg-6 text-center">
+                                <a href="#sponsor" class="footerLink"><i class="fa fa-angle-right footerIcon"></i>Sponsors</a>
+                                <a href="#prize" class="footerLink"><i class="fa fa-angle-right footerIcon"></i>Prizes</a>
+                                <a href="#judge" class="footerLink"><i class="fa fa-angle-right footerIcon"></i>Judges</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-xs-12 footerModify  text-center">
+                        <div class="footerTitle">
+                            Location
+                        </div>
+                        <div>
+                            <ul style="list-style-type:none;padding:0 ">
+                                <li class="widget_anpstext">
+
+                                    No.U-15,
+                                    J.V.P.D. Scheme,
+                                    Bhaktivedanta Swami Marg,
+                                    Opp.Cooper Hospital
+                                    Vile Parle (West),
+
+                                    Mumbai-400 056.
+                                    India
+                                </li>
+
+
+                                <li class="widget_anpstext">
+                                    coreacm@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12 footerModify text-center">
+                        <div class="footerTitle">
+                            Follow us
+                        </div>
+                        <div>
+                            <a class="mediaLink" href="https://www.facebook.com/djscoe.acm.5"><i class="fa fa-facebook"></i></a>
+                            <a class="mediaLink" ><i class="fa fa-twitter"></i></a>
+                            <a class="mediaLink" href="https://www.instagram.com/djsanghvi_acm/?hl=en"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">Made with  <span class="fa fa-heart " style="color: red;"></span> from Team ACM</div>
+                </div>
+
+
+            </footer>
+		<script src="{% static 'loc/index.js' %}"></script>
+
+        <script src="{% static 'loc/plugins/aos.js' %}"></script>
+        <script>
+            AOS.init(
+                {
+                    duration:1500
+                }
+            );
+        </script>
+
+</body>
+</html>

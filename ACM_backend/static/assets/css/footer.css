@@ -1,0 +1,27 @@
+.copy-right{
+  text-align:center;
+  background:#232730;
+  padding:1.2em 0;
+  border-top:1px solid #05A2C1;
+    /*position: absolute;*/
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  /*background-color: #efefef;*/
+  text-align: center;
+
+}
+
+.copy-right p{
+  color:#FFF;
+  margin:0;
+}
+.copy-right p a{
+  color: #FFF;
+  margin: 0;
+}
+.copy-right p a:hover{
+  text-decoration:none;
+  color:#05A2C1;
+}

@@ -1,0 +1,42 @@
+.banner-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.banner-container .banner-heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Raleway', sans-serif;
+  z-index: 200;
+  color: #FFF;
+  font-weight: 100;
+  font-size: 4.4em;
+  font-size: 8vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.banner-container .page-banner {
+  height: auto;
+  width: 100%;
+}
+.banner-container:after {
+  height: 100%;
+  width: 100%;
+  content: '';
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  z-index: 100;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.wordpress-about {
+  padding-top: 30px;
+  font-size: 1.2em;
+}

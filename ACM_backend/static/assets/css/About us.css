@@ -1,0 +1,162 @@
+.intro 
+  {
+    
+    width: 100%;  
+    /*background:url("meetblur.jpg");*/
+    background:#11364B;
+    background-repeat: no-repeat;
+    background-size:cover;       
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: 1;
+    padding-bottom:30px; 
+    padding-top:30px;
+  }
+   
+
+.intro-logo-img                 
+  {
+    position: static;
+    width: 100%;
+    height:auto;
+    z-index:1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+.intro-logo-img img
+  {
+ 	  height: 190px;
+  }
+
+.below_about_us
+  {
+	   font-size: 18px;
+	   margin: 0 15% 2% 15%;
+	   /*margin-left:300px;
+	   margin-right:300px; 
+	   padding-bottom: 1.5%;*/
+	   -webkit-filter: blur(0px);
+     -moz-filter: blur(0px);
+     -o-filter: blur(0px);
+     -ms-filter: blur(0px);
+     filter: blur(0px);
+  }
+  .below_Vision{
+      font-size: 18px;
+      margin: 0 17% 2% 17%;
+	   /*margin-left:300px;
+	   margin-right:300px; 
+	   padding-bottom: 1.5%;*/
+	   -webkit-filter: blur(0px);
+     -moz-filter: blur(0px);
+     -o-filter: blur(0px);
+     -ms-filter: blur(0px);
+     filter: blur(0px);
+      
+  }
+  .below_Mission{
+      font-size: 18px;
+      margin: 0 17% 2% 17%;
+	   /*margin-left:300px;
+	   margin-right:300px;*/ 
+	   
+	   -webkit-filter: blur(0px);
+     -moz-filter: blur(0px);
+     -o-filter: blur(0px);
+     -ms-filter: blur(0px);
+     filter: blur(0px);
+  }
+  .slid-btn
+    {
+      border: 2px solid #FFF;
+      padding: 2em 1em;
+      font-size: 1.2em;
+      border-radius: 0.6em;
+      -webkit-border-radius: 0.6em;
+      -moz-border-radius: 0.6em;
+      -o-border-radius: 0.6em;
+      -ms-border-radius: 0.6em;
+      position: absolute;
+      width: 20%;
+      margin-left: 80%;
+      right: 40px;
+      list-style-type: none;
+      color :white;
+      text-decoration: none;
+      text-align: center;
+      top: 130px;
+      background-color: #154360;
+
+}
+.intro_text{
+    display:block;
+    position:static;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    z-index:1.5;
+    top: 40%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    
+    }
+.intro-logo-text{
+      display:block; z-index:9; color:white; font-family: 'Montserrat', sans-serif; 
+      font-size: 40px;
+      width:100%;
+      display: flex;
+      justify-content: center;
+    }
+ 
+  .slid-btn:hover
+    {
+      opacity: 0.5;
+    }
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 767px) 
+{
+        
+    /*.below_about_us
+    {
+        font-size: 15px;
+        margin: 2px;
+    } 
+    */
+    .intro-logo-img img
+    {
+	      height:80px;
+    }
+    .intro
+    {
+    	 height: auto;
+        padding-bottom:30px; 
+    padding-top:30px;
+    }
+
+    .intro-logo-text,.intro_text
+    {
+        font-size: 20px;
+    }
+    
+    .slid-btn
+    {
+        top: 70px;
+        margin-left:30%; 
+        width: 30%;
+        right: 5px;
+        font-size: 10px;
+    }
+
+
+}
+
+
+}

@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+<div class="intro">
+        <div class="intro-logo-text">DJSCOE</div>
+        <div class="intro-logo-img">
+            <img src="{% static 'assets\images\acm_logo.png' %}" class="clip-img" >
+        </div>
+
+        <div class="intro_text">
+            <p><strong>About Us</strong></p>
+            <p class="below_about_us">ACM, the world's largest educational and scientific computing society, delivers resources that advance computing as a science and a profession. Since its inception in our college in 2007-2008, DJSCOE-ACM has established itself as a successful committee, not only in terms of the number of members who have become a part of the ACM family but also in terms of the activities and seminars/workshops that have been conducted. Don't let us convince you about our success. Let our three consecutive Best Student Chapter of the Year awards do the talking.
+            <br />
+            </p>
+            <p><strong>Vision</strong></p>
+             <p class="below_Vision">To impart high quality education, promote research culture and inculcate ethical values to develop/produce professionally competent engineers capable of meeting global challenges.
+             <br />
+             </p>
+             <p><strong>Mission</strong></p>
+             <p class="below_Mission">
+                <!-- <ol style="margin-left:16%;margin-right:17%" > <li style="margin-bottom:15px; font-size:18px"> Encourage research aptitude and analytical approach to prepare students for facing technological challenges in computing field.</li>-->
+                <!--<li style="margin-bottom:15px;font-size:18px"> Develop professionals, equipped with soft skills, ethical and social values for betterment of society.</li>-->
+                <!--<li style="margin-bottom:15px;font-size:18px"> Create awareness about sustainability concerns and ongoing trends in computing field.</li>-->
+                <!--<li style="margin-bottom:15px;font-size:18px"> To nurture and provide a collaborative environment for enabling aspiring technocrats to meet industry expectations.</li>-->
+                <!--<li style="font-size:18px"> Provide competent faculty and systematic modern approach in teaching-learning with state-of-art infrastructure.</li></ol>-->
+                1) Encourage research aptitude and analytical approach to prepare students for facing technological challenges in computing field.
+                    <br /><br />
+                2) Develop professionals, equipped with soft skills, ethical and social values for betterment of society.
+                    <br /><br />
+                3) Create awareness about sustainability concerns and ongoing trends in computing field.
+                    <br /> <br />
+                4) To nurture and provide a collaborative environment for enabling aspiring technocrats to meet industry expectations.
+                <br /><br />
+                5) Provide competent faculty and systematic modern approach in teaching-learning with state-of-art infrastructure.
+                <br /><br />
+                </p>
+                <p><strong>Program Educational Objectives</strong></p>
+                <p class="below_Mission">
+                    1) To impart quality education to students, while encouraging innovations and research culture in keeping abreast with technological advancements in computing.
+                    <br /><br />
+                    2) To develop computer professionals with comprehensive knowledge, capable of facing indigenous and global challenges.
+                    <br /><br />
+                    3) Develop computer professionals to fulfill industry expectations and social aspirations.
+                    <br /><br />
+                </p>
+                <p><strong>Program Specific Outcomes</strong></p>
+                <p class="below_Mission">
+                    By the completion of Computer Science program, the student will have following Program specific outcomes :
+                    <br><br />
+                    1) Ability to understand and assess fundamental and advanced principles of computer hardware and software systems.
+                    <br /><br />
+                    2) Comprehensive knowledge and practical competence with a broad range of programming languages enabling graduates to understand the structure, design and development methodologies of software systems on various platforms.
+                    <br /><br />
+                    3) Ability to efficiently model real-world problems using appropriate data structures and algorithms.
+                    <br /><br />
+                    4) Capability of applying computing knowledge in multidisciplinary domains to identify problems and provide solution to them.
+                </p>
+        </div>
+    </div>
+
+    <section id="portfolio" class="bg-light-gray" style="background-color:#ECF0F1;">                        <!--  refer to portfolio.css -->
+        <p style="font-size:30px; text-align:center; margin-bottom:40px; font-weight: 600">Our Work</p>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="" class="portfolio-link">
+                        <img src="{% static 'assets/images/elibrary.png' %}"  alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>E-library</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/Forum.jpg' %}"  alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Forum</h4>
+                        <!-- <p class="text-muted">Website Design</p> -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                        </div>
+                        <img src="{% static 'assets/images/blog.jpg' %}"  alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Blog</h4>
+                        <!-- <p class="text-muted">Website Design</p> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id="about" class="about row" style="background:#D1E3E7"   ; margin-right: 0;>                        <!-- refer to whatwedo.css -->
+
+
+
+
+      <div class="container">
+      <div class="clearfix"> </div><br/>
+      <p class="wellcome-note-head" style="text-align:center; "><span>What we do</span></p>
+      <div class="about-grids">
+          <div class="col-md-3 about-grid" >
+            <span class="about-icon"> </span>
+                <h3><a class='scroll' href="#port"><label style="font-weight:bold">Expert</label> Lectures</a>
+                </h3>
+                <p style="text-align:center;">We conduct guest lectures to enlighten our members with knowledge.</p>
+          </div>
+          <div class="col-md-3 about-grid" >
+              <span class="about-icon1"> </span>
+              <h3><a class='scroll' href="#port" ><label style="font-weight:bold">Industrial</label> Visits</a></h3>
+              <p style="text-align:center;">We arrange for a day long experience in the real industry world.</p>
+          </div>
+          <div class="col-md-3 about-grid" >
+              <span class="about-icon2"> </span>
+              <h3><a class='scroll' href="#port" ><label style="font-weight:bold">Work</label> Shops</a></h3>
+              <p style="text-align:center;">What's better than a 'hands-on' learning experience.</p>
+          </div>
+          <div class="col-md-3 about-grid">
+              <span class="about-icon3"> </span>
+              <h3><a class='scroll' href="#port" ><label style="font-weight:bold">Learning</label> Material</a></h3>
+              <p style="text-align:center;">Know about the latest trends in the world of technology through our magazine and newsletter</p>
+          </div>
+          <div class="clearfix"> </div>
+      </div>
+      </div>
+    </div>
+
+
+
+{% endblock %}

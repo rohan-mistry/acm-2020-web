@@ -1,0 +1,560 @@
+.textLoc {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -48%);
+    color: white;
+    font-size: 30px;
+}
+.styleAbout {
+  padding: 30px;
+    line-height: 34px;
+    padding-top: 70px;
+    font-size: 20px;
+    color: white;
+}
+.wrap {
+    position: relative;
+}
+.counter-modern-decor {
+  margin: 10px 49%;
+  text-align: center;
+  width: 56px;
+  height: 4px;
+  font-size: 0;
+  line-height: 0;
+  background: #00e6c7;
+}
+.footerModify {
+  padding:20px 0px;
+}
+.footerTitle {
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  font-family: 'Nunito';
+  font-weight: 500;
+}
+.footerLink {
+  display: block;
+  margin-bottom:10px;
+  color:#94959a;
+  text-decoration: none;
+}
+.footerIcon {
+  margin-right: 5px;
+}
+.widget_anpstext:before {
+  border-right: 1px solid currentColor;
+  bottom: 1px;
+  content: "";
+  left: 0;
+  opacity: .2;
+  position: absolute;
+  top: 1px;
+  width: 25px;
+}
+.widget_anpstext {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: 'Nunito';
+}
+.mediaLink {
+  font-size: 24px;
+  margin: 5px;
+  color:#aadaff !important ;
+}
+.footerLink:hover {
+  color: white;
+  border-radius: 8px;
+  background-color: #7d8075;
+  padding:10px;
+  text-decoration: none;
+}
+.mediaLink:hover {
+  background: #1b84de;
+  border-radius: 20px;
+  
+  padding: 15px;
+  color: white;
+}
+
+.styleFootLogo {
+  max-height: 140px;
+  max-width: 140px;
+ 
+}
+.footer-distributed{
+	background-color: #0d0d17;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+  width: 100%;
+  margin-bottom: -25px;
+	
+	padding: 35px 40px;
+}
+/* timeline */
+* {
+  box-sizing: border-box;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 90px;
+  }
+  @keyframes blink{
+  to { opacity: .0; }
+  }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ac19dc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* cover around content */
+.cover {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.cover::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the cover to the left */
+.left {
+  left: 0;
+}
+
+/* Place the cover to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left cover (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ffa35c;
+}
+
+/* Add arrows to the right cover (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ffa35c transparent transparent;
+}
+
+/* Fix the circle for covers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #0F4C76;
+  position: relative;
+  opacity: 0.789;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width covers */
+  .cover {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .cover::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right covers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+.makePad {
+  padding: 20px;
+}
+/* map */
+.branch {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: inline-grid;
+}
+.branchHead {
+  margin: 20px;
+  color: #ffffff;
+}
+.branchInfo {
+ color: #8c8383;
+
+}
+.branchNumber {
+  color: white;
+}
+.gradient-text {
+  background: -webkit-linear-gradient(left, #ee0e98 30%, rgba(0, 255, 221, 0.9) 65%);
+  background: -moz-linear-gradient(left, #ee0e98 30%, rgba(0, 255, 191, 0.9) 65%);
+  background: linear-gradient(left, #ee0e98 30%, rgba(0, 255, 191, 0.9) 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #399bff;
+  font-size: 40px;
+}
+
+/* domain */
+.serveCard {
+  border:1px solid #eeeeee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 254px;
+  transition: box-shadow .3s;
+ 
+}
+.serveCard:hover {
+  box-shadow: 0 0 11px rgba(12,13,33,.2); 
+}
+.serveIcon {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  
+}
+.serve {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.serveHead {
+  word-wrap: break-word;
+  font-size: 1.467em;
+  color:white;
+}
+.serveTop {
+  margin-bottom: 45px;
+  font-size: 50px;
+  color:white;
+}
+.serveContent {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width:992px) {
+  .serveContent {
+      padding-left: 70px;
+      padding-right: 70px;
+  }
+}
+.modifyServe {
+  height: 100px;
+}
+#myVideo {
+  position: fixed;
+  z-index: -1;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.headingContainer{
+  position: relative;
+  top: 24%;
+  padding-top: 120px;
+    padding-bottom: 60px;
+  color: white;
+  width: 100%;
+}
+.mainContent{
+  padding-bottom: 40px ;
+  position: relative;
+  text-align: center;
+}
+.font{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+.heading{
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Orbitron', sans-serif;
+}
+.header-sub-title {
+  color: #fff;
+  padding: 0.1em;
+}
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+  font-size: 50px;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid white;
+}
+
+#clockdiv > div{
+  width: 120px;
+	padding: 20px;
+	border-radius: 3px;
+  background: black;
+  display: inline-block;
+  margin: 20px;
+  border: 2px solid white;
+}
+
+#clockdiv div > h3{
+	padding: 15px;
+	border-radius: 3px;
+	background: blue;
+  display: inline-block;
+}
+.smalltext{
+	padding-top: 5px;
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+}
+.faqContainer{
+  padding: 25px 0px;
+  text-align: center;
+}
+.collapsible {
+  background-color: #0f4c75;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+  opacity: 0.8656;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.active, .collapsible:hover {
+  background-color: #00e6c7;
+
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+
+.contents {
+  padding: 0 18px;
+  margin-left: 10%;
+  max-height: 0;
+  overflow: hidden;
+  color: white;
+  transition: max-height 0.2s ease-out;
+  background-color: black;
+  width: 80%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 280px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  margin-bottom: 15px;
+}
+.flip-card-front {
+  background: transparent;
+  color: black;
+}
+.flip-card-back {
+  background-color: #0f4c75;
+  color: white;
+  transform: rotateY(180deg);
+}
+.map{
+  width: 100%;
+    height: 368px;
+}
+.styleInfo {
+  padding: 10px;
+  opacity: 0.789;
+  border-radius: 20px;
+  background: #7746e7;
+}
+.makeCenter {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 468px)
+{
+  .heading {
+    font-size: 50px;
+  }
+  .blink{
+    font-size: 43px;
+  }
+  .date{
+    font-size: 22px;
+  }
+  
+}
+@media only screen and (max-width: 390px){
+  #clockdiv > div{
+    width: 115px;
+    margin: 11px;
+  }
+  #clockdiv{
+    font-size: 40px;
+  }
+}
+
+  
+    .list-type5 ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    counter-reset: li-counter;
+    }
+    .list-type5 ol li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 20px;
+    text-align: left;
+    border-radius: 50px;
+    background-color: #ac19dcb3;
+    padding-left: 58px;
+    }
+    
+    .list-type5 a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    font-family: inherit
+    }
+    
+    .list-type5 li:hover{
+    box-shadow:inset -2em 0 #6CD6CC;
+    -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 0.5s;
+    padding: 30px;
+    color:white;
+    }
+    
+    .list-type5 ol li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #6CD6CC;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    }
+    .styleRule {
+      font-size: 50px;
+    padding: 30px;
+    
+    }
+    .styleCom,.styleCom:hover {
+      text-decoration: none;
+      color:#aadaff !important;
+    }
+  
